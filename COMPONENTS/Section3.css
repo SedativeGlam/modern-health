@@ -1,0 +1,34 @@
+.sec3-container {
+  background-color: #556fb8;
+  padding: 90px 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.sec3-container p {
+  margin: 0;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.logos-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  margin-top: 55px;
+  animation: scrollLogos 20s linear infinite;
+}
+
+.logos-wrapper img {
+  width: 200px;
+}
+
+@keyframes scrollLogos {
+  from {
+    transform: translateX(2%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

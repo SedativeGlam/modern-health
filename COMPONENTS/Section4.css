@@ -1,0 +1,86 @@
+.sec4-container {
+  padding: 80px 130px;
+  overflow: hidden;
+}
+
+.sec4-container h3 {
+  margin: 0;
+  color: #556fb8;
+}
+
+.scroll-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 30px 0;
+}
+
+.scroll-wrap p {
+  margin: 0;
+  color: #080808c9;
+  font-size: 50px;
+  font-weight: 700;
+  word-wrap: break-word;
+  width: 50%;
+  line-height: 50px;
+}
+
+.forward-backward {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.arrow-wrap {
+  padding: 10px 12px;
+  background-color: #556fb8;
+  border-radius: 100%;
+}
+
+.forward-arrow,
+.backward-arrow {
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+.sec4-cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.sec4-cards {
+  background-color: #556fb8;
+  min-width: 500px;
+  border-radius: 10px;
+}
+
+.sec4-cards video {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.logo-text {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 50px;
+}
+
+.logo-text img {
+  width: 130px;
+}
+
+.logo-text p {
+  margin: 0;
+  color: white;
+  font-size: 18px;
+}
+
+.logo-text span {
+  font-size: 18px;
+  font-weight: 700;
+}

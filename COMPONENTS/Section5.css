@@ -1,0 +1,81 @@
+.bg {
+  background-image: url("https://cdn.prod.website-files.com/5f39912be9da2f5c8fc5cc45/67007a1f1589f419b5c1b23e_Our-Foundation-bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 116vh;
+}
+
+.bg-ext {
+  height: 173vh;
+  background-color: #556fb8;
+}
+
+.sec5-wrapper {
+  padding: 130px;
+}
+
+.sec5-wrapper h3 {
+  color: #556fb8;
+}
+
+.sec5-wrapper .header {
+  margin: 0;
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  word-wrap: break-word;
+  width: 50%;
+  line-height: 50px;
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 45px;
+  margin-top: 80px;
+}
+
+.card-wrapper .card {
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.card-wrapper .card img {
+  width: 65px;
+}
+
+.card-wrapper .card h2 {
+  margin: 20px 0 0;
+  color: #3c3c3c;
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 43px;
+}
+
+.card-wrapper .card p {
+  font-size: 17px;
+  margin: 30px 0 35px;
+}
+
+.card-wrapper .card span {
+  font-weight: 700;
+}
+
+.card-wrapper .card button {
+  background-color: white;
+  font-family: "mulish", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border-width: 3px;
+  border-color: #556fb8;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.card-wrapper .card button:hover {
+  background-color: #e4e3e3;
+}

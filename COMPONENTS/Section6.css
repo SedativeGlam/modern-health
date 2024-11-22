@@ -1,0 +1,46 @@
+.sec6-container {
+  padding: 120px 100px 120px;
+  display: flex;
+  gap: 40px;
+}
+
+.personalized-health p {
+  font-size: 18px;
+}
+
+.personalized-health h1 {
+  font-size: 45px;
+  word-wrap: break-word;
+  width: 300px;
+  line-height: 50px;
+}
+
+.accordion-2 {
+}
+
+.drop-down-2 {
+  background-color: #dbdada;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 25px;
+  padding: 5px 0 5px 5px;
+  cursor: pointer;
+}
+
+.drop-down-2 h4 {
+  font-size: 18px;
+  margin: 0;
+  background-color: orange;
+  width: 18px;
+  padding: 8px 24px 8px 14px;
+  border-radius: 100%;
+}
+
+.drop-down-2 h3 {
+  margin: 0;
+}
+
+.accordion-text {
+  margin: 20px 0 20px 65px;
+}

@@ -1,0 +1,31 @@
+.bg-img {
+  background-image: url("./home-hero-wide-bg-img2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 82% 50%;
+  height: 125vh;
+}
+
+.sec-1 {
+  color: white;
+  padding: 80px 90px;
+}
+
+.article-1 {
+  margin: 0 0 0 40px;
+}
+
+.article-1 h1 {
+  font-size: 75px;
+  line-height: 75px;
+  word-wrap: break-word;
+  width: 600px;
+  margin-bottom: 0;
+}
+
+.article-1 p {
+  margin: 40px 0 30px;
+  font-size: 18px;
+  word-wrap: break-word;
+  width: 530px;
+}

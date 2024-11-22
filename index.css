@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.overall-wrapper {
+  font-family: "mulish", sans-serif;
+}
+
+nav {
+  /* position: fixed;
+  top: 0; */
+  width: 100%;
+  /* background-color: #ffffffee; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.md-health-logo img {
+  width: 170px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-toggle ul {
+  padding: 0 21px;
+  border-radius: 5px;
+  background-color: white;
+  color: #3d3c3c;
+  margin: 0;
+  position: absolute;
+  top: 130px;
+  transition: 0s ease;
+}
+
+.dropdown-toggle ul li {
+  list-style: none;
+  text-align: left;
+  line-height: 42px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.nav-right h4 {
+  margin: 0;
+  font-size: 16px;
+  padding: 0 8px;
+}
+
+.menu {
+  margin: 0 8px;
+}
+
+.menu:hover {
+  background-color: #aaa9a9;
+  border-radius: 5px;
+}
+
+.menu h4 {
+  /* color: #4e4e4e; */
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: color 0.4s ease;
+}
+
+.menu h4:hover {
+  color: #556fb8;
+}
+
+.menu-details {
+  font-family: "mulish", sans-serif;
+  /* display: flex;
+  justify-content: center; */
+  padding: 50px 140px 0;
+  position: fixed;
+  background-color: #556fb8;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+}
+
+.menu-details h2 {
+  font-size: 50px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.menu-details p {
+  font-size: 20px;
+}
+
+.nav-right span {
+  font-size: 28px;
+  font-weight: 100;
+}
+
+.nav-right button {
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #556fb8;
+  color: white;
+  border-style: none;
+  border-radius: 24px;
+  padding: 14px 23px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-right button:hover {
+  background-color: #3b56a0;
+  /* background-color: #3250a3; */
+}
+
+/* .bg-img {
+  background-image: url("./home-hero-wide-bg-img2.jpg");
+} */
