@@ -1,0 +1,19 @@
+.section8-container {
+  background-image: url("https://cdn.prod.website-files.com/5f39912be9da2f5c8fc5cc45/67007a1f1589f419b5c1b261_CTA-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section8-wrapper {
+  padding: 130px 130px 130px 0;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.section8-wrapper .flex-left img {
+  width: 620px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}

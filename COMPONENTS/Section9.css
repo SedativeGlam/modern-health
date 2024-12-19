@@ -1,0 +1,12 @@
+.section9-container {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  padding: 130px 0 130px 130px;
+}
+
+.section9-container .flex-left img {
+  width: 620px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
