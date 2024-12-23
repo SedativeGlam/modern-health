@@ -2,7 +2,7 @@
   background-color: #e9e3e3;
   padding: 80px 130px;
   overflow: hidden;
-  height: 170vh;
+  height: 140vh;
 }
 
 .sec7-container h3 {
@@ -61,7 +61,7 @@
 
 .sec7-cards .image-card {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   object-fit: cover;
   object-position: left;
   border-radius: 10px;
@@ -75,7 +75,7 @@
   padding: 50px 50px 0;
   border-radius: 10px;
   position: relative;
-  bottom: 568px;
+  bottom: 53.2%;
   left: 405px;
 }
 

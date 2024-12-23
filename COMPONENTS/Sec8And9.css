@@ -25,6 +25,8 @@
 
 .sec-8-9-container .flex-right .btn {
   margin-top: 25px;
+  font-size: 17px;
+  font-weight: 700;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -33,16 +35,11 @@
   padding: 4px 8px;
   width: 165px;
   padding: 10px 0 10px 16px;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .sec-8-9-container .flex-right .btn:hover {
-  background-color: #3e8ebdd8;
+  background-color: #e9e3e3;
+  color: #556fb8;
   cursor: pointer;
-}
-
-.sec-8-9-container .flex-right .btn .watch {
-  margin: 0;
-  font-size: 17px;
-  font-weight: 700;
 }

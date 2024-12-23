@@ -44,7 +44,7 @@ export default function Section6() {
                 : "none",
             backgroundRepeat: "no-repeat",
             backgroundSize: "contain",
-            height: "110vh",
+            height: "100vh",
           }}
         ></div>
 
@@ -58,7 +58,7 @@ export default function Section6() {
             backgroundRepeat: "no-repeat",
             position: "relative",
             left: "200px",
-            bottom: "670px",
+            bottom: "755px",
             width: "380px",
             height: "100vh",
             backgroundSize: "cover",

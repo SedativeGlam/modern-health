@@ -27,6 +27,7 @@ export default function Section1() {
           <Accordion
             drpDColor="#556fb8"
             listColor="#000"
+            questionFont="16px"
             fontSize="68px"
             paddingL="20px"
             paddingR="20px"

@@ -7,6 +7,7 @@ export default function Accordion({
   question,
   accordionBg,
   dropDownBg,
+  questionFont,
   fontSize,
   paddingL,
   paddingR,
@@ -36,7 +37,9 @@ export default function Accordion({
           paddingRight: paddingR,
         }}
       >
-        <p style={{ color: question }}>How can we help?</p>
+        <p style={{ color: question, fontSize: questionFont }}>
+          How can we help?
+        </p>
         <RiArrowDropDownLine style={{ fontSize: fontSize, color: drpDColor }} />
       </div>
 

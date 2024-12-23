@@ -7,22 +7,22 @@ export default function Sec8And9({
   text,
   name,
   position,
-  color,
-  title1Color,
-  title2Color,
+  color1,
+  color2,
+  color3,
 }) {
   return (
     <div className="sec-8-9-container">
-      <div className="flex-right" style={{ color }}>
-        <h3>{header1}</h3>
-        <h2>{header2}</h2>
+      <div className="flex-right" style={{ color: color1 }}>
+        <h3 style={{ color: color2 }}>{header1}</h3>
+        <h2 style={{ color: color3 }}>{header2}</h2>
         <p className="text">{text}</p>
         <h4>{name}</h4>
         <p className="pos">{position}</p>
 
-        <div className="btn">
-          <p className="watch">Watch Now</p>
-          <IoMdPlayCircle style={{ fontSize: "21px" }} />
+        <div className="btn" style={{ borderColor: color2 }}>
+          Watch Now
+          <IoMdPlayCircle style={{ fontSize: "21px", color: color2 }} />
         </div>
       </div>
     </div>

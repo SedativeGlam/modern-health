@@ -1,8 +1,9 @@
 .sec6-container {
+  background-color: #f4f0f0;
   padding: 120px 100px 120px;
   display: flex;
   justify-content: flex-start;
-  height: 150vh;
+  height: 130vh;
 }
 
 .products {
@@ -78,8 +79,8 @@
   column-gap: 5px;
   flex-wrap: wrap;
   position: relative;
-  bottom: 1090px;
-  left: 213px;
+  bottom: 1280px;
+  left: 220px;
   padding: 55px;
 }
 

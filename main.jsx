@@ -13,6 +13,8 @@ import "./COMPONENTS/Section7.css";
 import "./COMPONENTS/Sec8And9.css";
 import "./COMPONENTS/Section8.css";
 import "./COMPONENTS/Section9.css";
+import "./COMPONENTS/Section10.css";
+import "./COMPONENTS/Section11.css";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

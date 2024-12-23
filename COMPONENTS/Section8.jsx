@@ -15,7 +15,7 @@ export default function Section8() {
           text="“I sometimes think that we're a Modern Health family because each of us has a therapist. We also have a family therapist. It has meant a closer relationship with my wife, a deeper relationship with my daughter, and all of us loving each other more.”"
           name="Kima"
           position="Modern Health Member"
-          color="white"
+          color1="white"
         />
       </div>
     </div>

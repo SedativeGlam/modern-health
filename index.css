@@ -87,9 +87,7 @@ nav {
 
 .menu-details {
   font-family: "mulish", sans-serif;
-  /* display: flex;
-  justify-content: center; */
-  padding: 50px 140px 0;
+  padding: 100px 250px 0;
   position: fixed;
   background-color: #556fb8;
   width: 100%;
@@ -97,16 +95,75 @@ nav {
   left: 0;
   height: 100%;
   z-index: 1;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease;
+}
+
+.menu-details.slide-in {
+  transform: translateY(0);
+}
+
+.menu-details.slide-out {
+  transform: translateY(-100%);
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menu-details h2 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 500;
   margin: 0;
 }
 
 .menu-details p {
-  font-size: 20px;
+  font-size: 19px;
+  margin: 30px 0 50px;
+  line-height: 30px;
+  word-wrap: break-word;
+  width: 900px;
+}
+
+.meeeting-schedule {
+  margin-top: 130px;
+}
+
+.meeeting-schedule hr {
+  margin: 0 0 30px;
+  width: 457px;
+}
+
+.meeeting-schedule h3 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.meeeting-schedule h4 {
+  margin: 5px 0 25px;
+  font-weight: 500;
+}
+
+.schedule {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 20px;
+  background: transparent;
+  color: white;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.schedule:hover {
+  background-color: #4862aa;
 }
 
 .nav-right span {
@@ -128,9 +185,4 @@ nav {
 
 .nav-right button:hover {
   background-color: #3b56a0;
-  /* background-color: #3250a3; */
 }
-
-/* .bg-img {
-  background-image: url("./home-hero-wide-bg-img2.jpg");
-} */
