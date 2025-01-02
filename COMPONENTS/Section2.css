@@ -6,14 +6,14 @@
 }
 
 .sec2-container {
-  padding: 0 130px;
+  padding: 80px 130px 0;
 }
 
 .sec2-flex {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 120px 0 80px;
+  margin: 0 0 80px;
 }
 
 .sec2-container h2 {
@@ -54,4 +54,42 @@
   margin: 0;
   font-size: 18px;
   color: #3c3c3c;
+}
+
+@media screen and (max-width: 767px) {
+  .approach-bg {
+    background-size: cover;
+    background-position: 100%;
+  }
+
+  .sec2-container {
+    padding: 60px 30px;
+  }
+
+  .sec2-flex {
+    margin: 0 0 40px;
+  }
+
+  .sec2-container h2 {
+    font-size: 28px;
+    width: 250px;
+    line-height: 30px;
+  }
+
+  .sec2-card-wrapper {
+    flex-direction: column;
+  }
+
+  .sec2-card {
+    background-color: #f7f6ee;
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+  }
+
+  .sec2-card h3 {
+    font-size: 25px;
+    line-height: 30px;
+    margin: 20px 0;
+  }
 }

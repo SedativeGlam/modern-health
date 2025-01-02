@@ -20,8 +20,20 @@
   animation: scrollLogos 20s linear infinite;
 }
 
-.logos-wrapper img {
+.logos-wrapper .company-logo {
   width: 200px;
+}
+
+.pixar {
+  width: 200px;
+}
+
+.zappos {
+  width: 140px;
+}
+
+.dennys {
+  width: 100px;
 }
 
 @keyframes scrollLogos {
@@ -30,5 +42,37 @@
   }
   to {
     transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sec3-container {
+    padding: 50px 0;
+  }
+
+  .sec3-container p {
+    margin: 0 40px;
+    font-size: 23px;
+  }
+
+  .logos-wrapper {
+    margin-top: 30px;
+    animation: scrollLogos 5s linear infinite;
+  }
+
+  .logos-wrapper .company-logo {
+    width: 180px;
+  }
+
+  .pixar {
+    width: 180px;
+  }
+
+  .zappos {
+    width: 130px;
+  }
+
+  .dennys {
+    width: 100px;
   }
 }

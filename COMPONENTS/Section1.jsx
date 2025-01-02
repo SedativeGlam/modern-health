@@ -13,11 +13,12 @@ export default function Section1() {
           userColor="white"
           dropDLineColor="white"
           vertLineColor="white"
+          padding="40px"
         />
 
         <div className="article-1">
           <h1>The Global Standard in Mental Health</h1>
-          <p>
+          <p className="Global-text">
             Modern Health delivers evidence-based, equitable mental health
             services worldwide — from self-guided tools to crisis care —
             ensuring our members have the right support wherever in the world
@@ -28,7 +29,7 @@ export default function Section1() {
             drpDColor="#556fb8"
             listColor="#000"
             questionFont="16px"
-            fontSize="68px"
+            fontSize="50px"
             paddingL="20px"
             paddingR="20px"
           />

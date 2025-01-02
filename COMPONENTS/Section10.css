@@ -22,7 +22,39 @@
   font-weight: 700;
   background-color: white;
   color: #00a3ff;
-  border-style: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
   border-radius: 20px;
   padding: 12px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.section10-wrapper button:hover {
+  background: transparent;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .section10-container {
+    height: 50vh;
+  }
+
+  .section10-wrapper {
+    padding: 80px 30px;
+  }
+
+  .section10-wrapper h2 {
+    font-size: 32px;
+    font-weight: 500;
+    margin: 20px 0;
+    line-height: 30px;
+  }
+
+  .section10-wrapper button {
+    font-size: 13px;
+    font-weight: 700;
+    padding: 8px 18px;
+  }
 }

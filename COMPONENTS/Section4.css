@@ -1,4 +1,5 @@
 .sec4-container {
+  background-color: #f7f6f6;
   padding: 80px 130px;
   overflow: hidden;
 }
@@ -8,14 +9,14 @@
   color: #556fb8;
 }
 
-.scroll-wrap {
+.sec4-container .scroll-wrap {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   margin: 30px 0;
 }
 
-.scroll-wrap p {
+.sec4-container .scroll-wrap p {
   margin: 0;
   color: #080808c9;
   font-size: 50px;
@@ -25,19 +26,19 @@
   line-height: 50px;
 }
 
-.forward-backward {
+.sec4-container .forward-backward {
   display: flex;
   align-items: center;
   gap: 18px;
 }
 
-.arrow-wrap {
+.sec4-container .arrow-wrap {
   padding: 10px 12px;
   background-color: #556fb8;
   border-radius: 100%;
 }
 
-.forward-arrow,
+.sec4-container .forward-arrow,
 .backward-arrow {
   font-size: 25px;
   color: white;
@@ -83,4 +84,47 @@
 .logo-text span {
   font-size: 18px;
   font-weight: 700;
+}
+
+@media screen and (max-width: 767px) {
+  .sec4-container {
+    padding: 80px 30px;
+  }
+
+  .sec4-container .scroll-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .sec4-container .scroll-wrap p {
+    font-size: 30px;
+    width: 90%;
+    line-height: 30px;
+  }
+
+  .sec4-container .forward-backward {
+    gap: 217px;
+  }
+
+  .sec4-container .forward-arrow,
+  .backward-arrow {
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .sec4-cards {
+    min-width: 280px;
+  }
+
+  .logo-text {
+    gap: 20px;
+    padding: 32px;
+    flex-direction: column;
+  }
+
+  .logo-text img {
+    width: 140px;
+  }
 }

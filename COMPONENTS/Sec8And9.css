@@ -43,3 +43,15 @@
   color: #556fb8;
   cursor: pointer;
 }
+
+@media screen and (max-width: 767px) {
+  .sec-8-9-container .flex-right h2 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .sec-8-9-container .flex-right .text {
+    font-size: 16px;
+    margin-top: 0;
+  }
+}

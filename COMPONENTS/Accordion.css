@@ -13,14 +13,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 0 20px; */
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
 .drop-down p {
   margin: 0;
-  /* font-size: 16px; */
 }
 
 .accordion ul {
@@ -42,4 +40,10 @@
 
 .accordion ul a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .accordion {
+    width: 85%;
+  }
 }

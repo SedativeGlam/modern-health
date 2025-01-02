@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { FaUserCircle } from "react-icons/fa";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { PiLineVerticalThin } from "react-icons/pi";
@@ -13,9 +13,15 @@ export default function Navbar({
   dropDLineColor,
   vertLineColor,
   navLinkColor,
+  padding,
+  position,
+  transform,
+  transition,
 }) {
   const [isOpen, setIsOpen] = useState("false");
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [showNav, setShowNav] = useState(false);
+  const lastScrollY = useRef(0);
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -29,54 +35,79 @@ export default function Navbar({
     setIsModalOpen(true);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > 0) {
+        if (currentScrollY < lastScrollY.current) {
+          setShowNav(true);
+        } else {
+          setShowNav(false);
+        }
+      } else {
+        setShowNav(false);
+      }
+
+      setPrevNavPosition(currentNavposition);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div>
+    <div style={{ paddingLeft: padding, paddingRight: padding }}>
       {isModalOpen && (
-        <div className="modal-backdrop">
-          <div
-            className={`menu-details ${isModalOpen ? "slide-in" : "slide-out"}`}
-          >
-            <div className="menu-header">
-              <h2>How can we help?</h2>
-              <TiDeleteOutline
-                style={{ fontSize: "40px", cursor: "pointer" }}
-                onClick={closeNavModal}
-              />
-            </div>
-
-            <p>
-              It's time to experience personalized mental health care to improve
-              employee and family well-being. Whether you are an HR
-              representative, benefits consultant, or provider, you can request
-              a demo with Modern Health. Let's begin the journey to a thriving
-              workforce.
-            </p>
-
-            <Accordion
-              drpDColor="#fff"
-              listColor="#fff"
-              question="#fff"
-              accordionBg="#3250a3"
-              dropDownBg="#556fb8"
-              fontSize="80px"
-              questionFont="18px"
+        <div className="menu-details">
+          <div className="menu-header">
+            <h2>How can we help?</h2>
+            <TiDeleteOutline
+              style={{ fontSize: "40px", cursor: "pointer" }}
+              onClick={closeNavModal}
             />
+          </div>
 
-            <div className="meeeting-schedule">
-              <hr />
-              <h3>Rather skip the form?</h3>
-              <h4>Let's schedule a meeting at your convenience now!</h4>
+          <p>
+            It's time to experience personalized mental health care to improve
+            employee and family well-being. Whether you are an HR
+            representative, benefits consultant, or provider, you can request a
+            demo with Modern Health. Let's begin the journey to a thriving
+            workforce.
+          </p>
 
-              <button className="schedule">
-                Schedule a Demo
-                <BsCalendarFill style={{ fontSize: "14px" }} />
-              </button>
-            </div>
+          <Accordion
+            drpDColor="#fff"
+            listColor="#fff"
+            question="#fff"
+            accordionBg="#3250a3"
+            dropDownBg="#556fb8"
+            fontSize="80px"
+            questionFont="18px"
+          />
+
+          <div className="meeeting-schedule">
+            <hr />
+            <h3>Rather skip the form?</h3>
+            <h4>Let's schedule a meeting at your convenience now!</h4>
+
+            <button className="schedule">
+              Schedule a Demo
+              <BsCalendarFill style={{ fontSize: "14px" }} />
+            </button>
           </div>
         </div>
       )}
 
-      <nav style={{ backgroundColor: BgColor }}>
+      <nav
+        className={`navbar ${showNav ? "visible" : ""}`}
+        style={{
+          backgroundColor: BgColor,
+          position: position,
+          transform: transform,
+          transition: showNav ? "translate(0)" : transition,
+        }}
+      >
         <div className="md-health-logo">
           <img src={logo} />
         </div>

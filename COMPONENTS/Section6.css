@@ -1,5 +1,6 @@
 .sec6-container {
   background-color: #f4f0f0;
+  color: #080808c9;
   padding: 120px 100px 120px;
   display: flex;
   justify-content: flex-start;
@@ -32,7 +33,7 @@
 }
 
 .personalized-health .text {
-  margin: 30px 0 25px;
+  margin: 20px 0 25px;
 }
 
 .accordion-wrap {
@@ -98,4 +99,36 @@
 .top-picks li:hover {
   background-color: #4c65a8;
   color: white;
+}
+
+.accordion-text {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .sec6-container {
+    background-color: #f7f6f6;
+    padding: 80px 30px 0;
+    flex-direction: column;
+    display: flex;
+    /* justify-content: initial; */
+    height: 106vh;
+  }
+
+  .personalized-health {
+    width: 100%;
+  }
+
+  .personalized-health h1 {
+    font-size: 28px;
+    line-height: 27px;
+  }
+
+  .personalized-health .text {
+    margin: 25px 0 25px;
+  }
+
+  .products {
+    display: none;
+  }
 }

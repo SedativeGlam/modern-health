@@ -6,7 +6,7 @@ export default function Sec8And9({
   header2,
   text,
   name,
-  position,
+  rank,
   color1,
   color2,
   color3,
@@ -18,7 +18,7 @@ export default function Sec8And9({
         <h2 style={{ color: color3 }}>{header2}</h2>
         <p className="text">{text}</p>
         <h4>{name}</h4>
-        <p className="pos">{position}</p>
+        <p className="pos">{rank}</p>
 
         <div className="btn" style={{ borderColor: color2 }}>
           Watch Now
