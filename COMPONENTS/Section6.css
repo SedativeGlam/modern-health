@@ -168,9 +168,7 @@
 
   .products {
     position: relative;
-
-    /* left: 10%; */
-    width: 80%;
+    width: 70%;
   }
 
   .personalized-health {
