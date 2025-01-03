@@ -2,7 +2,7 @@
   background-color: #e9e3e3;
   padding: 80px 130px;
   overflow: hidden;
-  height: 1200px;
+  height: 1000px;
 }
 
 .sec7-container h3 {
@@ -55,28 +55,27 @@
 }
 
 .sec7-cards {
-  min-width: 100%;
-  /* border-radius: 10px; */
+  min-width: 500px;
 }
 
 .sec7-cards .image-card {
   width: 100%;
-  height: 800px;
+  height: 600px;
   object-fit: cover;
-  object-position: left;
+  object-position: 25%;
   border-radius: 10px;
 }
 
 .sec7-cards .card-details {
   background-color: #556fb8;
   color: white;
-  width: 45%;
-  min-height: 40%;
-  padding: 50px 50px 0;
+  width: 60%;
+  min-height: 50%;
+  padding: 50px 30px 0;
   border-radius: 10px;
   position: relative;
   bottom: 52%;
-  left: 405px;
+  left: 200px;
 }
 
 .sec7-cards .image-title {
@@ -99,7 +98,7 @@
 @media screen and (max-width: 767px) {
   .sec7-container {
     padding: 80px 30px;
-    height: 1100px;
+    /* height: 1100px; */
   }
 
   .sec7-container h3 {
@@ -117,38 +116,6 @@
     font-size: 30px;
     width: 95%;
     line-height: 30px;
-  }
-
-  .sec7-container .forward-backward {
-    gap: 217px;
-  }
-
-  .sec7-cards-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-  }
-
-  .sec7-cards {
-    min-width: 500px;
-  }
-
-  .sec7-cards .image-card {
-    width: 100%;
-    height: 700px;
-    object-fit: cover;
-    object-position: 25%;
-    border-radius: 10px;
-  }
-
-  .sec7-cards .card-details {
-    width: 60%;
-    min-height: 42%;
-    padding: 30px 30px 0;
-    bottom: 51%;
-    left: 200px;
   }
 }
 
@@ -168,24 +135,12 @@
     line-height: 45px;
   }
 
-  .sec7-cards-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-  }
-
   .sec7-cards {
     min-width: 500px;
   }
 
   .sec7-cards .image-card {
-    width: 100%;
     height: 700px;
-    object-fit: cover;
-    object-position: 25%;
-    border-radius: 10px;
   }
 
   .sec7-cards .card-details {
