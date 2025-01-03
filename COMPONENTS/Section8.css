@@ -26,7 +26,21 @@
   }
 
   .section8-wrapper .flex-left img {
-    width: 315px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .section8-wrapper {
+    padding: 60px 40px 60px 40px;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .section8-wrapper .flex-left img {
+    width: 100%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
   }

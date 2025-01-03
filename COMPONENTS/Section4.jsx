@@ -57,7 +57,7 @@ export default function Section4() {
   };
 
   return (
-    <div className="sec4-container">
+    <section className="sec4-container">
       <h3>Testimonials</h3>
       <div className="scroll-wrap">
         <p>Hear directly from our customers</p>
@@ -87,6 +87,6 @@ export default function Section4() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

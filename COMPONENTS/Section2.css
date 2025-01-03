@@ -93,3 +93,30 @@
     margin: 20px 0;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .approach-bg {
+    background-size: cover;
+    background-position: 100%;
+  }
+
+  .sec2-container {
+    padding: 60px 40px 0;
+  }
+  .sec2-container h2 {
+    font-size: 35px;
+    width: 340px;
+    line-height: 42px;
+  }
+
+  .sec2-card-wrapper {
+    flex-direction: column;
+  }
+
+  .sec2-card {
+    background-color: #f7f6ee;
+    width: 100%;
+    padding: 50px;
+    border-radius: 10px;
+  }
+}

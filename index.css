@@ -12,18 +12,10 @@ body {
 }
 
 .navbar {
-  /* position: fixed;
-  top: 0; */
   width: 100%;
-  /* background-color: #ffffffee; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 0 40px; */
-}
-
-.navbar.visible {
-  transform: translateY(0);
 }
 
 .md-health-logo img {
@@ -127,7 +119,7 @@ body {
 
 .meeeting-schedule hr {
   margin: 0 0 30px;
-  width: 457px;
+  width: 38%;
 }
 
 .meeeting-schedule h3 {
@@ -195,8 +187,41 @@ body {
   }
 
   .nav-right h4 {
-    /* margin: 0;
-    font-size: 16px; */
     padding: 0;
+  }
+
+  .menu-details {
+    padding: 30px 40px 0;
+  }
+
+  .menu-details h2 {
+    font-size: 25px;
+  }
+
+  .menu-details p {
+    font-size: 16px;
+    margin: 30px 0 30px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu-details {
+    padding: 100px 150px 0;
+  }
+
+  .menu-details h2 {
+    font-size: 40px;
+  }
+
+  .menu-details p {
+    font-size: 18px;
+    margin: 30px 0 30px;
+    width: 100%;
+  }
+
+  .meeeting-schedule hr {
+    margin: 0 0 30px;
+    width: 50%;
   }
 }

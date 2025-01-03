@@ -4,7 +4,7 @@ import Accordion from "./Accordion";
 
 export default function Section1() {
   return (
-    <div className="bg-img">
+    <section className="bg-img">
       <div className="sec-1">
         <Navbar
           logo="./ModernHealth-logo-white.svg"
@@ -13,7 +13,6 @@ export default function Section1() {
           userColor="white"
           dropDLineColor="white"
           vertLineColor="white"
-          padding="40px"
         />
 
         <div className="article-1">
@@ -35,6 +34,6 @@ export default function Section1() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

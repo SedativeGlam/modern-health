@@ -2,12 +2,11 @@
   background-image: url("https://cdn.prod.website-files.com/5f39912be9da2f5c8fc5cc45/67007a1f1589f419b5c1b23e_Our-Foundation-bg-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  height: 116vh;
+  height: 900px;
 }
 
 .bg-ext {
-  height: 85vh;
+  height: 520px;
   background-color: #556fb8;
 }
 
@@ -85,11 +84,11 @@
 @media screen and (max-width: 767px) {
   .bg {
     background-position: 53%;
-    height: 75vh;
+    height: 500px;
   }
 
   .bg-ext {
-    height: 319vh;
+    height: 2100px;
     background-color: #556fb8;
   }
 
@@ -145,5 +144,47 @@
     border-color: #556fb8;
     transition: 0.3s ease;
     cursor: pointer;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .bg {
+    background-position: 53%;
+    height: 400px;
+  }
+
+  .bg-ext {
+    height: 1600px;
+    background-color: #556fb8;
+  }
+
+  .sec5-wrapper {
+    padding: 60px 40px;
+  }
+
+  .sec5-wrapper h3 {
+    margin: 0 0 40px;
+  }
+
+  .sec5-wrapper .header {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .card-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 45px;
+    margin-top: 50px;
+  }
+
+  .card-wrapper .card {
+    padding: 40px;
+  }
+
+  .card-wrapper .card h2 {
+    margin: 20px 0 0;
+    color: #3c3c3c;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 26px;
   }
 }

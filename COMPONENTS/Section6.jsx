@@ -33,7 +33,7 @@ export default function Section6() {
   ];
 
   return (
-    <div className="sec6-container">
+    <section className="sec6-container">
       <div className="products">
         <div
           className="products-1"
@@ -44,7 +44,7 @@ export default function Section6() {
                 : "none",
             backgroundRepeat: "no-repeat",
             backgroundSize: "contain",
-            height: "100vh",
+            height: "700px",
           }}
         ></div>
 
@@ -56,11 +56,11 @@ export default function Section6() {
                 ? accordionDetails[openAccordion].bgImage2
                 : "none",
             backgroundRepeat: "no-repeat",
-            position: "relative",
-            left: "200px",
-            bottom: "755px",
+            position: "absolute",
+            left: "17%",
+            top: "60px",
             width: "380px",
-            height: "100vh",
+            height: "800px",
             backgroundSize: "cover",
           }}
         ></div>
@@ -102,6 +102,6 @@ export default function Section6() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

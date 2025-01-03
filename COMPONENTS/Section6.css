@@ -1,14 +1,14 @@
 .sec6-container {
-  background-color: #f4f0f0;
   color: #080808c9;
   padding: 120px 100px 120px;
   display: flex;
-  justify-content: flex-start;
-  height: 130vh;
+  justify-content: center;
+  height: 900px;
+  position: relative;
 }
 
 .products {
-  width: 60%;
+  width: 50%;
 }
 
 .products-1,
@@ -17,17 +17,19 @@
 }
 
 .personalized-health {
-  width: 40%;
+  width: 50%;
 }
 
 .personalized-health p {
   font-size: 18px;
+  word-wrap: break-word;
+  width: 600px;
 }
 
 .personalized-health h1 {
   font-size: 45px;
   word-wrap: break-word;
-  width: 300px;
+  width: 450px;
   line-height: 50px;
   margin: 0;
 }
@@ -44,6 +46,7 @@
 
 .drop-down-2 {
   background-color: #dbdada;
+  width: 650px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,9 +82,9 @@
   row-gap: 15px;
   column-gap: 5px;
   flex-wrap: wrap;
-  position: relative;
-  bottom: 1280px;
-  left: 220px;
+  position: absolute;
+  top: 300px;
+  left: 18.5%;
   padding: 55px;
 }
 
@@ -102,25 +105,31 @@
 }
 
 .accordion-text {
-  margin-bottom: 0;
+  margin: 20px 0 0 50px;
 }
 
 @media screen and (max-width: 767px) {
   .sec6-container {
     background-color: #f7f6f6;
-    padding: 80px 30px 0;
+    padding: 0 30px 0;
     flex-direction: column;
     display: flex;
-    /* justify-content: initial; */
-    height: 106vh;
+    height: 700px;
   }
 
   .personalized-health {
     width: 100%;
   }
 
+  .personalized-health p {
+    font-size: 18px;
+    word-wrap: break-word;
+    width: 320px;
+  }
+
   .personalized-health h1 {
     font-size: 28px;
+    width: 300px;
     line-height: 27px;
   }
 
@@ -130,5 +139,68 @@
 
   .products {
     display: none;
+  }
+
+  .drop-down-2 {
+    background-color: #dbdada;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  .accordion-text {
+    margin: 20px 0 0 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .sec6-container {
+    padding: 0 40px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    height: 1300px;
+  }
+
+  .products {
+    position: relative;
+
+    /* left: 10%; */
+    width: 80%;
+  }
+
+  .personalized-health {
+    width: 80%;
+  }
+
+  .personalized-health h1 {
+    width: 300px;
+    font-size: 28px;
+    line-height: 27px;
+  }
+
+  .personalized-health p {
+    font-size: 17px;
+    word-wrap: break-word;
+    width: 100%;
+  }
+
+  .top-picks {
+    left: 22%;
+  }
+
+  .drop-down-2 {
+    background-color: #dbdada;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    padding: 5px;
+    cursor: pointer;
   }
 }

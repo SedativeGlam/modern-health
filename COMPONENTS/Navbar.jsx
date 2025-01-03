@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import { FaUserCircle } from "react-icons/fa";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { PiLineVerticalThin } from "react-icons/pi";
@@ -13,15 +13,9 @@ export default function Navbar({
   dropDLineColor,
   vertLineColor,
   navLinkColor,
-  padding,
-  position,
-  transform,
-  transition,
 }) {
   const [isOpen, setIsOpen] = useState("false");
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [showNav, setShowNav] = useState(false);
-  const lastScrollY = useRef(0);
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -35,29 +29,8 @@ export default function Navbar({
     setIsModalOpen(true);
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
-      if (currentScrollY > 0) {
-        if (currentScrollY < lastScrollY.current) {
-          setShowNav(true);
-        } else {
-          setShowNav(false);
-        }
-      } else {
-        setShowNav(false);
-      }
-
-      setPrevNavPosition(currentNavposition);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
-    <div style={{ paddingLeft: padding, paddingRight: padding }}>
+    <div>
       {isModalOpen && (
         <div className="menu-details">
           <div className="menu-header">
@@ -100,12 +73,9 @@ export default function Navbar({
       )}
 
       <nav
-        className={`navbar ${showNav ? "visible" : ""}`}
+        className="navbar"
         style={{
           backgroundColor: BgColor,
-          position: position,
-          transform: transform,
-          transition: showNav ? "translate(0)" : transition,
         }}
       >
         <div className="md-health-logo">

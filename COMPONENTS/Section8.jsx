@@ -3,7 +3,7 @@ import Sec8And9 from "./Sec8And9";
 
 export default function Section8() {
   return (
-    <div className="section8-container">
+    <section className="section8-container">
       <div className="section8-wrapper">
         <div className="flex-left">
           <img src="/kima.jpg" />
@@ -18,6 +18,6 @@ export default function Section8() {
           color1="white"
         />
       </div>
-    </div>
+    </section>
   );
 }

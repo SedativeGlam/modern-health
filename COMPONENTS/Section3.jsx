@@ -3,7 +3,7 @@ import "./Section3.css";
 
 export default function Section3() {
   return (
-    <div className="sec3-container">
+    <section className="sec3-container">
       <p>The world's top companies choose Modern Health</p>
       <div className="logos-wrapper">
         <img className="company-logo" src="./ancestry-logo.png" />
@@ -17,6 +17,6 @@ export default function Section3() {
         <img className="company-logo" src="./electronic-arts-logo.png" />
         <img className="company-logo" src="./the-trade-desk-logo.png" />
       </div>
-    </div>
+    </section>
   );
 }

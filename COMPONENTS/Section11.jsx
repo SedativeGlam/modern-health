@@ -44,7 +44,7 @@ export default function Section11() {
   ];
 
   return (
-    <div className="footer">
+    <section>
       <div className="footer-top">
         <div className="badge-and-logo">
           <img className="logo" src="/Modern-logo.png" />
@@ -106,6 +106,6 @@ export default function Section11() {
           <a href="#">Cookie Preferences</a>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

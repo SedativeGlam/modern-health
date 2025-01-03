@@ -40,7 +40,7 @@ export default function Section5() {
   ];
 
   return (
-    <div>
+    <section>
       <div className="bg">
         <div className="sec5-wrapper">
           <h3>Our Foundation</h3>
@@ -63,6 +63,6 @@ export default function Section5() {
       </div>
 
       <div className="bg-ext"></div>
-    </div>
+    </section>
   );
 }

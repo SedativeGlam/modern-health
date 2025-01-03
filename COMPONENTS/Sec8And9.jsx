@@ -12,7 +12,7 @@ export default function Sec8And9({
   color3,
 }) {
   return (
-    <div className="sec-8-9-container">
+    <section className="sec-8-9-container">
       <div className="flex-right" style={{ color: color1 }}>
         <h3 style={{ color: color2 }}>{header1}</h3>
         <h2 style={{ color: color3 }}>{header2}</h2>
@@ -25,6 +25,6 @@ export default function Sec8And9({
           <IoMdPlayCircle style={{ fontSize: "21px", color: color2 }} />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

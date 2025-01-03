@@ -22,7 +22,7 @@ export default function Section2() {
   ];
 
   return (
-    <div className="approach-bg">
+    <section className="approach-bg">
       <div className="sec2-container">
         <div className="sec2-flex">
           <h2>Solve your greatest business challenges with Modern Health</h2>
@@ -39,6 +39,6 @@ export default function Section2() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

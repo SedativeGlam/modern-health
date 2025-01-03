@@ -19,7 +19,21 @@
   }
 
   .section9-container .flex-left img {
-    width: 315px;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .section9-container {
+    padding: 60px 40px 60px 40px;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .section9-container .flex-left img {
+    width: 100%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
   }

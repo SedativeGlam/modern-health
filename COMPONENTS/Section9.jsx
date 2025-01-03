@@ -3,7 +3,7 @@ import Sec8And9 from "./Sec8And9";
 
 export default function Section9() {
   return (
-    <div className="section9-container">
+    <section className="section9-container">
       <Sec8And9
         className="details"
         header1="Community building"
@@ -16,6 +16,6 @@ export default function Section9() {
       <div className="flex-left">
         <img src="/naomi.jpg" />
       </div>
-    </div>
+    </section>
   );
 }

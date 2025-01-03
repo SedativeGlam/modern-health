@@ -128,3 +128,15 @@
     width: 140px;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .sec4-container {
+    padding: 80px 40px;
+  }
+
+  .sec4-container .scroll-wrap p {
+    font-size: 35px;
+    width: 50%;
+    line-height: 35px;
+  }
+}

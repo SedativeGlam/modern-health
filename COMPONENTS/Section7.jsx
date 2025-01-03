@@ -51,7 +51,7 @@ export default function Section7() {
   };
 
   return (
-    <div className="sec7-container">
+    <section className="sec7-container">
       <h3>Experiences</h3>
       <div className="scroll-wrap">
         <p>Discover what our customer champions have to say</p>
@@ -79,6 +79,6 @@ export default function Section7() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

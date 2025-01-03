@@ -15,18 +15,6 @@ import Section11 from "./Section11";
 export default function Page() {
   return (
     <section className="overall-wrapper">
-      {/* <Navbar
-        logo="./Modern_Health_Logo.png"
-        BgColor="#ffffffee"
-        navLinkColor="#4e4e4e"
-        userColor="#2b2a2a"
-        dropDLineColor="#4e4e4e"
-        padding="130px"
-        position="sticky"
-        transform="translateY(-100%)"
-        transition="transform 0.3s ease-in"
-      /> */}
-
       <Section1 />
       <Section2 />
       <Section3 />

@@ -1,7 +1,6 @@
 .section10-container {
   background-image: url("https://cdn.prod.website-files.com/5f39912be9da2f5c8fc5cc45/67007a1f1589f419b5c1b261_CTA-bg.png");
   background-repeat: no-repeat;
-  height: 70vh;
   background-size: cover;
   background-position: center;
 }
@@ -37,10 +36,6 @@
 }
 
 @media screen and (max-width: 767px) {
-  .section10-container {
-    height: 50vh;
-  }
-
   .section10-wrapper {
     padding: 80px 30px;
   }
@@ -54,6 +49,23 @@
 
   .section10-wrapper button {
     font-size: 13px;
+    font-weight: 700;
+    padding: 8px 18px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .section10-wrapper {
+    padding: 80px 40px;
+  }
+
+  .section10-wrapper h2 {
+    font-size: 45px;
+    margin: 20px 0;
+  }
+
+  .section10-wrapper button {
+    font-size: 15px;
     font-weight: 700;
     padding: 8px 18px;
   }
