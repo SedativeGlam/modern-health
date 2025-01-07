@@ -5,14 +5,18 @@ import { PiLineVerticalThin } from "react-icons/pi";
 import Accordion from "./Accordion";
 import { TiDeleteOutline } from "react-icons/ti";
 import { BsCalendarFill } from "react-icons/bs";
+import Button from "./Button";
+import NavAndFooterLinks from "./NavAndFooterLinks";
 
 export default function Navbar({
   logo,
-  BgColor,
-  userColor,
-  dropDLineColor,
-  vertLineColor,
-  navLinkColor,
+  // BgColor,
+  // userColor,
+  // dropDLineColor,
+  // vertLineColor,
+  // navLinkColor,
+
+  className,
 }) {
   const [isOpen, setIsOpen] = useState("false");
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -33,23 +37,26 @@ export default function Navbar({
     <div>
       {isModalOpen && (
         <div className="menu-details">
-          <div className="menu-header">
-            <h2>How can we help?</h2>
+          <div className="delete-icon">
             <TiDeleteOutline
               style={{ fontSize: "40px", cursor: "pointer" }}
               onClick={closeNavModal}
             />
           </div>
+          <div className="menu-grid">
+            <NavAndFooterLinks className="nav-modal-links"></NavAndFooterLinks>
 
-          <p>
-            It's time to experience personalized mental health care to improve
-            employee and family well-being. Whether you are an HR
-            representative, benefits consultant, or provider, you can request a
-            demo with Modern Health. Let's begin the journey to a thriving
-            workforce.
-          </p>
+            <div className="nav-modal-right">
+              <h2>How can we help?</h2>
+              <p>
+                It's time to experience personalized mental health care to
+                improve employee and family well-being. Whether you are an HR
+                representative, benefits consultant, or provider, you can
+                request a demo with Modern Health. Let's begin the journey to a
+                thriving workforce.
+              </p>
 
-          <Accordion
+              {/* <Accordion
             drpDColor="#fff"
             listColor="#fff"
             question="#fff"
@@ -68,45 +75,42 @@ export default function Navbar({
               Schedule a Demo
               <BsCalendarFill style={{ fontSize: "14px" }} />
             </button>
+          </div> */}
+            </div>
           </div>
         </div>
       )}
 
-      <nav
-        className="navbar"
-        style={{
-          backgroundColor: BgColor,
-        }}
-      >
+      <nav className={`navbar ${className}`}>
         <div className="md-health-logo">
           <img src={logo} />
         </div>
 
         <div className="nav-right">
-          <div className="dropdown-toggle" onClick={toggle}>
-            <FaUserCircle style={{ color: userColor }} />
-            <RiArrowDropDownLine
-              style={{ fontSize: "30px", color: dropDLineColor }}
-            />
+          <div className="dropdown-menu">
+            <div className="dropdown-toggle" onClick={toggle}>
+              <FaUserCircle />
+              <RiArrowDropDownLine style={{ fontSize: "30px" }} />
 
-            {isOpen ? null : (
-              <ul>
-                <li>Members</li>
-                <li>Admins</li>
-                <li>Providers</li>
-              </ul>
-            )}
+              <PiLineVerticalThin />
+
+              {isOpen ? null : (
+                <ul>
+                  <li>Members</li>
+                  <li>Admins</li>
+                  <li>Providers</li>
+                </ul>
+              )}
+            </div>
+
+            <div className="menu" onClick={openNavModal}>
+              <h4>
+                Menu <span>+</span>
+              </h4>
+            </div>
           </div>
 
-          <PiLineVerticalThin style={{ color: vertLineColor }} />
-
-          <div className="menu" onClick={openNavModal}>
-            <h4 style={{ color: navLinkColor }}>
-              Menu <span>+</span>
-            </h4>
-          </div>
-
-          <button>Let's talk</button>
+          <Button className="nav-btn">Let's Talk</Button>
         </div>
       </nav>
     </div>

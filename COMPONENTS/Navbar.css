@@ -28,7 +28,9 @@ body {
   font-family: sans-serif;
 }
 
+.dropdown-menu,
 .dropdown-toggle {
+  color: #3c3c3c;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -64,12 +66,11 @@ body {
 }
 
 .menu:hover {
-  background-color: #aaa9a9;
+  /* background-color: #aaa9a9; */
   border-radius: 5px;
 }
 
 .menu h4 {
-  /* color: #4e4e4e; */
   display: flex;
   align-items: center;
   gap: 5px;
@@ -78,39 +79,65 @@ body {
 }
 
 .menu h4:hover {
-  color: #556fb8;
+  color: #00a3ff;
 }
 
 .menu-details {
   font-family: "mulish", sans-serif;
-  padding: 100px 250px 0;
+  color: white;
+  padding: 80px 400px 0;
   position: fixed;
-  background-color: #556fb8;
+  background-color: #00a3ff;
   width: 100%;
   top: 0;
   left: 0;
   height: 100%;
-  z-index: 1;
+  z-index: 100;
 }
 
-.menu-header {
+.menu-details .delete-icon {
+  text-align: end;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.links.nav-modal-links {
+  color: white;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nav-modal-links .anchor-tags {
+  display: flex;
   align-items: center;
 }
 
-.menu-details h2 {
-  font-size: 40px;
+.links.nav-modal-links .anchor-tags a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+.links.nav-modal-links h3 {
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.nav-modal-right h2 {
+  font-size: 50px;
   font-weight: 500;
   margin: 0;
 }
 
-.menu-details p {
-  font-size: 19px;
+.nav-modal-right p {
+  font-size: 18px;
   margin: 30px 0 50px;
   line-height: 30px;
-  word-wrap: break-word;
-  width: 900px;
 }
 
 .meeeting-schedule {
@@ -157,20 +184,15 @@ body {
   font-weight: 100;
 }
 
-.nav-right button {
-  font-size: 18px;
-  font-weight: 700;
-  background-color: #556fb8;
+.nav-btn {
+  background-color: #00a3ff;
   color: white;
-  border-style: none;
-  border-radius: 24px;
   padding: 14px 23px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  border-style: none;
 }
 
-.nav-right button:hover {
-  background-color: #3b56a0;
+.nav-btn:hover {
+  background-color: #3e8ae6;
 }
 
 @media screen and (max-width: 767px) {

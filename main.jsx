@@ -1,7 +1,10 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
-import "./index.css";
+import "./COMPONENTS/Topnav.css";
+import "./COMPONENTS/Navbar.css";
+import "./COMPONENTS/NavAndFooterLinks.css";
+import "./COMPONENTS/Button.css";
 import "./COMPONENTS/Section1.css";
 import "./COMPONENTS/Accordion.css";
 import "./COMPONENTS/Section2.css";
@@ -14,7 +17,7 @@ import "./COMPONENTS/Sec8And9.css";
 import "./COMPONENTS/Section8.css";
 import "./COMPONENTS/Section9.css";
 import "./COMPONENTS/Section10.css";
-import "./COMPONENTS/Section11.css";
+import "./COMPONENTS/Footer.css";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
