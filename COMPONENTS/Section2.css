@@ -6,7 +6,8 @@
 }
 
 .sec2-container {
-  padding: 80px 130px 0;
+  padding: 80px 200px 0;
+  color: #3c3c3c;
 }
 
 .sec2-flex {
@@ -101,11 +102,16 @@
   }
 
   .sec2-container {
-    padding: 60px 40px 0;
+    padding: 100px 60px 0;
   }
+
+  .sec2-flex {
+    margin: 0 0 40px;
+  }
+
   .sec2-container h2 {
-    font-size: 35px;
-    width: 340px;
+    font-size: 32px;
+    width: 480px;
     line-height: 42px;
   }
 

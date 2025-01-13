@@ -1,20 +1,9 @@
 .accordion {
-  background-color: #f3f0f0;
-  color: black;
-  width: 31%;
+  width: 450px;
   margin: 0;
   border-radius: 5px;
   cursor: pointer;
   position: absolute;
-}
-
-.drop-down {
-  background-color: #fcfafa;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
 }
 
 .drop-down p {
@@ -22,20 +11,15 @@
 }
 
 .accordion ul {
-  padding: 0;
-  margin: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .accordion ul li {
   list-style: none;
-  line-height: 23px;
   font-size: 16px;
   padding: 10px 20px 15px;
   transition: background-color 0.3s ease;
-}
-
-.accordion ul li:hover {
-  background-color: #e2dfdf;
 }
 
 .accordion ul a {

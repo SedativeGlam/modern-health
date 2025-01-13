@@ -7,13 +7,9 @@ export default function Section1() {
     <section className="bg-img">
       <div className="sec-1">
         <Navbar
-          logo="./ModernHealth-logo-white.svg"
-          BgColor="transparent"
-          navLinkColor="white"
-          userColor="white"
-          dropDLineColor="white"
-          vertLineColor="white"
-        />
+          className="sec1-nav"
+          logo="/ModernHealth-logo-white.svg"
+        ></Navbar>
 
         <div className="article-1">
           <h1>The Global Standard in Mental Health</h1>
@@ -24,14 +20,7 @@ export default function Section1() {
             they're located.
           </p>
 
-          <Accordion
-            drpDColor="#556fb8"
-            listColor="#000"
-            questionFont="16px"
-            fontSize="50px"
-            paddingL="20px"
-            paddingR="20px"
-          />
+          <Accordion className="sec1-accordion" iconColor="#00a3ff"></Accordion>
         </div>
       </div>
     </section>

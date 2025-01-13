@@ -37,22 +37,27 @@ body {
 }
 
 .dropdown-toggle ul {
-  padding: 0 21px;
+  padding: 0;
   border-radius: 5px;
   background-color: white;
   color: #3d3c3c;
   margin: 0;
   position: absolute;
-  top: 130px;
-  transition: 0s ease;
+  transition: all 0.3s ease;
 }
 
 .dropdown-toggle ul li {
+  padding: 0 21px;
   list-style: none;
   text-align: left;
   line-height: 42px;
   font-size: 15px;
   font-weight: 600;
+}
+
+.dropdown-toggle ul li:hover {
+  background-color: #f5f7f8;
+  border-radius: 5px;
 }
 
 .nav-right h4 {
@@ -65,21 +70,12 @@ body {
   margin: 0 8px;
 }
 
-.menu:hover {
-  /* background-color: #aaa9a9; */
-  border-radius: 5px;
-}
-
 .menu h4 {
   display: flex;
   align-items: center;
   gap: 5px;
   cursor: pointer;
   transition: color 0.4s ease;
-}
-
-.menu h4:hover {
-  color: #00a3ff;
 }
 
 .menu-details {
@@ -92,7 +88,27 @@ body {
   top: 0;
   left: 0;
   height: 100%;
-  z-index: 100;
+  z-index: 1000;
+  pointer-events: none;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.2s ease-in-out, transform 0.9s ease-in-out;
+}
+
+.menu-details.open {
+  max-height: 100vh;
+  pointer-events: auto;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu-details.closed {
+  max-height: 0;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-100%);
 }
 
 .menu-details .delete-icon {
@@ -110,11 +126,34 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  cursor: pointer;
+}
+
+.links.nav-modal-links ul {
+  margin-top: 15px;
+}
+
+.links.nav-modal-links ul:first-of-type {
+  margin-top: 0;
+}
+
+.links.nav-modal-links ul:hover .anchor-tags {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.5s ease-in-out;
+  pointer-events: auto;
+  height: auto !important;
 }
 
 .nav-modal-links .anchor-tags {
   display: flex;
   align-items: center;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  height: 0px;
+  overflow: hidden;
 }
 
 .links.nav-modal-links .anchor-tags a {
@@ -123,9 +162,14 @@ body {
   text-decoration: none;
 }
 
+.links.nav-modal-links .anchor-tags a:hover {
+  text-decoration: underline;
+}
+
 .links.nav-modal-links h3 {
   font-size: 70px;
   font-weight: 600;
+  margin: 0;
 }
 
 .nav-modal-right h2 {
@@ -140,13 +184,44 @@ body {
   line-height: 30px;
 }
 
+.nav-modal-accordion .drop-down {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+.nav-modal-accordion .drop-down p {
+  font-size: 16px;
+}
+
+.nav-modal-accordion ul {
+  padding: 0;
+  background-color: #2c93e7;
+  margin-top: -1px;
+}
+
+.nav-modal-accordion ul li:hover {
+  background-color: #1e8ee9;
+}
+
+.nav-modal-accordion ul a {
+  color: white;
+}
+
 .meeeting-schedule {
-  margin-top: 130px;
+  margin-top: 150px;
+  z-index: -1;
 }
 
 .meeeting-schedule hr {
+  position: relative;
   margin: 0 0 30px;
-  width: 38%;
+  width: 650px;
+  opacity: 0.4;
+  z-index: -1;
 }
 
 .meeeting-schedule h3 {
@@ -176,7 +251,7 @@ body {
 }
 
 .schedule:hover {
-  background-color: #4862aa;
+  background-color: #1e8ee9;
 }
 
 .nav-right span {

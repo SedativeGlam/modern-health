@@ -45,6 +45,7 @@ export default function NavAndFooterLinks({ className }) {
       {footerLinksData.map((item, i) => (
         <ul key={i}>
           <h3>{item.title}</h3>
+
           <div className="anchor-tags">
             {[item.li1, item.li2, item.li3, item.li4, item.li5]
               .filter(Boolean)
