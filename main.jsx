@@ -9,6 +9,7 @@ import "./COMPONENTS/Section1.css";
 import "./COMPONENTS/Accordion.css";
 import "./COMPONENTS/Section2.css";
 import "./COMPONENTS/Section3.css";
+import "./COMPONENTS/Slides.css";
 import "./COMPONENTS/Section4.css";
 import "./COMPONENTS/Section5.css";
 import "./COMPONENTS/Section6.css";

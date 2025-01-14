@@ -1,67 +1,34 @@
-.sec4-container {
-  background-color: #f7f6f6;
-  padding: 80px 130px;
-  overflow: hidden;
-}
-
-.sec4-container h3 {
-  margin: 0;
-  color: #556fb8;
-}
-
-.sec4-container .scroll-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin: 30px 0;
-}
-
-.sec4-container .scroll-wrap p {
-  margin: 0;
-  color: #080808c9;
-  font-size: 50px;
-  font-weight: 700;
-  word-wrap: break-word;
-  width: 50%;
-  line-height: 50px;
-}
-
-.sec4-container .forward-backward {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-
-.sec4-container .arrow-wrap {
-  padding: 10px 12px;
-  background-color: #556fb8;
-  border-radius: 100%;
-}
-
-.sec4-container .forward-arrow,
-.backward-arrow {
-  font-size: 25px;
-  color: white;
-  cursor: pointer;
-}
-
-.sec4-cards-wrapper {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 30px;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-}
-
 .sec4-cards {
-  background-color: #556fb8;
-  min-width: 500px;
+  background-color: #00a3ff;
+  min-width: 630px;
   border-radius: 10px;
+  position: relative;
+  overflow: hidden;
 }
 
 .sec4-cards video {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  cursor: pointer;
+}
+
+.play-icon-wrap {
+  text-align: center;
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  padding: 23px 20px;
+  border-radius: 100%;
+  background: #12214a80;
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+}
+
+.play-icon {
+  color: white;
+  font-size: 50px;
 }
 
 .logo-text {
@@ -87,35 +54,18 @@
 }
 
 @media screen and (max-width: 767px) {
-  .sec4-container {
-    padding: 80px 30px;
-  }
-
-  .sec4-container .scroll-wrap {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-  }
-
-  .sec4-container .scroll-wrap p {
-    font-size: 30px;
-    width: 90%;
-    line-height: 30px;
-  }
-
-  .sec4-container .forward-backward {
-    gap: 217px;
-  }
-
-  .sec4-container .forward-arrow,
-  .backward-arrow {
-    font-size: 25px;
-    color: white;
-    cursor: pointer;
-  }
-
   .sec4-cards {
     min-width: 280px;
+  }
+
+  .play-icon-wrap {
+    top: 15%;
+    width: 50px;
+    padding: 10px 0px;
+  }
+
+  .play-icon {
+    font-size: 25px;
   }
 
   .logo-text {
@@ -130,13 +80,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .sec4-container {
-    padding: 80px 40px;
-  }
-
-  .sec4-container .scroll-wrap p {
-    font-size: 35px;
-    width: 50%;
-    line-height: 35px;
+  .logo-text {
+    padding: 50px 50px 110px;
   }
 }

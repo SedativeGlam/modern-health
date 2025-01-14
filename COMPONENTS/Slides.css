@@ -1,0 +1,101 @@
+.slides-wrapper {
+  background-color: #f7f6f6;
+  padding: 96px 200px;
+  overflow: hidden;
+}
+
+.slides-wrapper h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #00a3ff;
+}
+
+.slides-wrapper .scroll-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 32px 0 35px;
+}
+
+.slides-wrapper .scroll-wrap p {
+  margin: 0;
+  color: #080808c9;
+  font-size: 48px;
+  font-weight: 700;
+  word-wrap: break-word;
+  width: 30%;
+  line-height: 50px;
+}
+
+.slides-wrapper .forward-backward {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.slides-wrapper .arrow-wrap {
+  padding: 10px 12px;
+  background-color: #00a3ff;
+  border-radius: 100%;
+}
+
+.slides-wrapper .forward-arrow,
+.backward-arrow {
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  z-index: 700;
+}
+
+@media screen and (max-width: 767px) {
+  .slides-wrapper {
+    padding: 80px 30px;
+    position: relative;
+  }
+
+  .slides-wrapper .scroll-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .slides-wrapper .scroll-wrap p {
+    font-size: 30px;
+    width: 90%;
+    line-height: 30px;
+  }
+
+  .slides-wrapper .forward-backward {
+    gap: 217px;
+    position: absolute;
+    top: 92%;
+  }
+
+  .slides-wrapper .forward-arrow,
+  .backward-arrow {
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .slides-wrapper {
+    padding: 80px 60px;
+  }
+
+  .slides-wrapper .scroll-wrap p {
+    font-size: 32px;
+    color: #3c3c3c;
+    line-height: 30px;
+    width: 50%;
+  }
+}
