@@ -1,5 +1,4 @@
 .slides-wrapper {
-  background-color: #f7f6f6;
   padding: 96px 200px;
   overflow: hidden;
 }
@@ -46,9 +45,9 @@
   cursor: pointer;
 }
 
-.cards-wrapper {
+.slides-wrapper .cards-wrapper {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  /* grid-template-columns: repeat(5, 1fr); */
   gap: 30px;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -57,7 +56,7 @@
 
 @media screen and (max-width: 767px) {
   .slides-wrapper {
-    padding: 80px 30px;
+    padding: 67px 30px 95px;
     position: relative;
   }
 
@@ -76,7 +75,7 @@
   .slides-wrapper .forward-backward {
     gap: 217px;
     position: absolute;
-    top: 92%;
+    top: 90%;
   }
 
   .slides-wrapper .forward-arrow,

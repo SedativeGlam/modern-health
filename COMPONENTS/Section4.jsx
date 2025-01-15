@@ -42,8 +42,12 @@ export default function Section4() {
   ];
 
   return (
-    <section>
-      <Slides className="sec4-cards-wrapper">
+    <section className="sec4-container">
+      <Slides
+        title="Testimonials"
+        text="Hear directly from our customers"
+        className="sec4-cards-wrapper"
+      >
         {sec4CardValues.map((item, i) => (
           <div className="sec4-cards" key={i}>
             <div className="play-icon-wrap">

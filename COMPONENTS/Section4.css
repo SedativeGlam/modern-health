@@ -1,3 +1,11 @@
+.sec4-container {
+  background-color: #f7f6ee;
+}
+
+.sec4-container .cards-wrapper {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .sec4-cards {
   background-color: #00a3ff;
   min-width: 630px;

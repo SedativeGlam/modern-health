@@ -1,14 +1,38 @@
 .section9-container {
+  background-color: #f6f6ee;
   display: flex;
+  justify-content: end;
   align-items: center;
   gap: 100px;
-  padding: 130px 0 130px 130px;
+  padding: 130px 0 130px 200px;
 }
 
-.section9-container .flex-left img {
-  width: 620px;
+.section9-container .community-img img {
+  width: 800px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+}
+
+.community-building h3 {
+  color: #00a3ff;
+}
+
+.community-building h2,
+.community-building .text {
+  color: #3c3c3c;
+}
+
+.community-building .btn {
+  border-color: #00a3ff;
+  color: #3c3c3c;
+}
+
+.community-building .btn:hover {
+  background-color: #e4e4db;
+}
+
+.community-building .play-circle {
+  color: #00a3ff;
 }
 
 @media screen and (max-width: 767px) {
@@ -18,7 +42,7 @@
     gap: 40px;
   }
 
-  .section9-container .flex-left img {
+  .section9-container .community-img img {
     width: 100%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -26,15 +50,30 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .section9-container {
-    padding: 60px 40px 60px 40px;
-    flex-direction: column;
-    gap: 40px;
+  .mental-health.community-building {
+    position: absolute;
+    transform: translateY(0);
+    width: 685px;
   }
 
-  .section9-container .flex-left img {
-    width: 100%;
+  .section9-container {
+    padding: 80px 60px 80px 60px;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    height: 70vh;
+  }
+
+  .section9-container .community-img img {
+    width: 85%;
+    height: 350px;
+    object-fit: cover;
+    object-position: top;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(9%) translateY(22%);
   }
 }

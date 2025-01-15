@@ -6,13 +6,13 @@
 }
 
 .bg-ext {
-  min-height: 600px;
+  height: 1100px;
   background-color: #00a3ff;
 }
 
 .sec5-wrapper {
   color: #080808c9;
-  padding: 128px 200px;
+  padding: 128px 200px 0;
 }
 
 .sec5-wrapper h3 {
@@ -40,7 +40,7 @@
 }
 
 .card-wrapper .card {
-  background-color: #f7f6f6;
+  background-color: #f8f6ee;
   padding: 64px;
   border-radius: 10px;
 }
@@ -67,7 +67,7 @@
 }
 
 .card-wrapper .card button {
-  background-color: white;
+  background-color: #f8f6ee;
   color: #080808c9;
   font-family: "mulish", sans-serif;
   font-size: 16px;
@@ -136,16 +136,9 @@
   }
 
   .card-wrapper .card button {
-    background-color: white;
-    font-family: "mulish", sans-serif;
     font-size: 16px;
     font-weight: 700;
     padding: 10px 20px;
-    border-radius: 20px;
-    border-width: 3px;
-    border-color: #00a3ff;
-    transition: 0.3s ease;
-    cursor: pointer;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -155,7 +148,7 @@
   }
 
   .bg-ext {
-    height: 1600px;
+    height: 1680px;
     background-color: #00a3ff;
   }
 
@@ -168,7 +161,7 @@
   }
 
   .sec5-wrapper .header {
-    font-size: 35px;
+    font-size: 32px;
     line-height: 35px;
   }
 

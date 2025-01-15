@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { IoMdArrowForward } from "react-icons/io";
 import { IoMdArrowBack } from "react-icons/io";
 
-export default function Slides({ children }) {
+export default function Slides({ title, text, children }) {
   const cardsWrapperRef = useRef(null);
   const scrollAmount = 1000;
 
@@ -20,9 +20,9 @@ export default function Slides({ children }) {
 
   return (
     <section className="slides-wrapper">
-      <h3>Testimonials</h3>
+      <h3>{title}</h3>
       <div className="scroll-wrap">
-        <p>Hear directly from our customers</p>
+        <p>{text}</p>
         <div className="forward-backward">
           <div className="arrow-wrap">
             <IoMdArrowBack className="backward-arrow" onClick={prevSlide} />

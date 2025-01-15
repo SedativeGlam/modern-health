@@ -1,6 +1,7 @@
-import { useRef } from "react";
+import react from "react";
 import { IoMdArrowForward } from "react-icons/io";
 import { IoMdArrowBack } from "react-icons/io";
+import Slides from "./Slides";
 
 export default function Section7() {
   const sec7CardValues = [
@@ -21,7 +22,7 @@ export default function Section7() {
         "https://cdn.prod.website-files.com/66ea499b2bdb92277c3762f4/66ea6c7ad1833f3400485726_palo-alto-networks-logo.png",
       text: "“Modern Health was a more broad approach that helped us hit larger subsets of the population by virtue of the offerings and that it wasn’t so concentrated solely on therapy.”",
       name: "Tom Woo",
-      position: "‍VP of Global People at Palo Alto Networks",
+      position: "VP of Global People at Palo Alto Networks",
     },
 
     {
@@ -35,24 +36,43 @@ export default function Section7() {
     },
   ];
 
-  const cardsWrapperRef = useRef(null);
-  const scrollAmount = 800;
+  // const cardsWrapperRef = useRef(null);
+  // const scrollAmount = 800;
 
-  const nextSlide = () => {
-    if (cardsWrapperRef.current) {
-      cardsWrapperRef.current.scrollLeft += scrollAmount;
-    }
-  };
+  // const nextSlide = () => {
+  //   if (cardsWrapperRef.current) {
+  //     cardsWrapperRef.current.scrollLeft += scrollAmount;
+  //   }
+  // };
 
-  const prevSlide = () => {
-    if (cardsWrapperRef.current) {
-      cardsWrapperRef.current.scrollLeft -= scrollAmount;
-    }
-  };
+  // const prevSlide = () => {
+  //   if (cardsWrapperRef.current) {
+  //     cardsWrapperRef.current.scrollLeft -= scrollAmount;
+  //   }
+  // };
 
   return (
     <section className="sec7-container">
-      <h3>Experiences</h3>
+      {/* <Slides className="sec7-cards-wrapper"></Slides> */}
+      <Slides
+        title="Experiences"
+        text="Discover what our customer champions have to say"
+        className="sec7-cards-wrapper"
+      >
+        {sec7CardValues.map((item, i) => (
+          <div className="sec7-cards" key={i}>
+            <img className="image-card" src={item.image} />
+
+            <div className="card-details">
+              <img className="image-title" src={item.imgTitle} />
+              <p className="text">{item.text}</p>
+              <h4>{item.name}</h4>
+              <p className="pos">{item.position}</p>
+            </div>
+          </div>
+        ))}
+      </Slides>
+      {/* <h3>Experiences</h3>
       <div className="scroll-wrap">
         <p>Discover what our customer champions have to say</p>
         <div className="forward-backward">
@@ -78,7 +98,7 @@ export default function Section7() {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 }

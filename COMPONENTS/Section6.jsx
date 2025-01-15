@@ -57,7 +57,7 @@ export default function Section6() {
                 : "none",
             backgroundRepeat: "no-repeat",
             position: "absolute",
-            left: "17%",
+            left: "21%",
             top: "60px",
             width: "380px",
             height: "800px",

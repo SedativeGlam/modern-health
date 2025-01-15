@@ -1,6 +1,7 @@
 .sec6-container {
+  background-color: #f8f6ee;
   color: #080808c9;
-  padding: 120px 100px 120px;
+  padding: 128px 200px;
   display: flex;
   justify-content: center;
   height: 900px;
@@ -84,7 +85,7 @@
   flex-wrap: wrap;
   position: absolute;
   top: 300px;
-  left: 18.5%;
+  left: 22.5%;
   padding: 55px;
 }
 
@@ -110,7 +111,7 @@
 
 @media screen and (max-width: 767px) {
   .sec6-container {
-    background-color: #f7f6f6;
+    background-color: #f8f6ee;
     padding: 0 30px 0;
     flex-direction: column;
     display: flex;
@@ -154,6 +155,7 @@
 
   .accordion-text {
     margin: 20px 0 0 0;
+    padding: 0 12px;
   }
 }
 
@@ -188,7 +190,7 @@
   }
 
   .top-picks {
-    left: 22%;
+    left: 27%;
   }
 
   .drop-down-2 {

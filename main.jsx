@@ -14,7 +14,7 @@ import "./COMPONENTS/Section4.css";
 import "./COMPONENTS/Section5.css";
 import "./COMPONENTS/Section6.css";
 import "./COMPONENTS/Section7.css";
-import "./COMPONENTS/Sec8And9.css";
+import "./COMPONENTS/MentalHealth.css";
 import "./COMPONENTS/Section8.css";
 import "./COMPONENTS/Section9.css";
 import "./COMPONENTS/Section10.css";
