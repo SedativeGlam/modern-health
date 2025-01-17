@@ -1,8 +1,14 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
 .section10-container {
   background-image: url("https://cdn.prod.website-files.com/5f39912be9da2f5c8fc5cc45/67007a1f1589f419b5c1b261_CTA-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  width: 100%;
 }
 
 .section10-wrapper {
