@@ -12,6 +12,7 @@
   border-radius: 10px;
   position: relative;
   overflow: hidden;
+  scroll-snap-align: start;
 }
 
 .sec4-cards video {

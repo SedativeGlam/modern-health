@@ -4,6 +4,7 @@
   overflow: hidden;
   width: 100%;
   z-index: 900;
+  position: relative;
 }
 
 .sec3-container p {

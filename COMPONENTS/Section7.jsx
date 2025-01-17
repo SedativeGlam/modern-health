@@ -1,6 +1,4 @@
-import react from "react";
-import { IoMdArrowForward } from "react-icons/io";
-import { IoMdArrowBack } from "react-icons/io";
+import React from "react";
 import Slides from "./Slides";
 
 export default function Section7() {
@@ -36,24 +34,8 @@ export default function Section7() {
     },
   ];
 
-  // const cardsWrapperRef = useRef(null);
-  // const scrollAmount = 800;
-
-  // const nextSlide = () => {
-  //   if (cardsWrapperRef.current) {
-  //     cardsWrapperRef.current.scrollLeft += scrollAmount;
-  //   }
-  // };
-
-  // const prevSlide = () => {
-  //   if (cardsWrapperRef.current) {
-  //     cardsWrapperRef.current.scrollLeft -= scrollAmount;
-  //   }
-  // };
-
   return (
     <section className="sec7-container">
-      {/* <Slides className="sec7-cards-wrapper"></Slides> */}
       <Slides
         title="Experiences"
         text="Discover what our customer champions have to say"
@@ -72,33 +54,6 @@ export default function Section7() {
           </div>
         ))}
       </Slides>
-      {/* <h3>Experiences</h3>
-      <div className="scroll-wrap">
-        <p>Discover what our customer champions have to say</p>
-        <div className="forward-backward">
-          <div className="arrow-wrap">
-            <IoMdArrowBack className="backward-arrow" onClick={prevSlide} />
-          </div>
-          <div className="arrow-wrap">
-            <IoMdArrowForward className="forward-arrow" onClick={nextSlide} />
-          </div>
-        </div>
-      </div>
-
-      <div className="sec7-cards-wrapper" ref={cardsWrapperRef}>
-        {sec7CardValues.map((item, i) => (
-          <div className="sec7-cards" key={i}>
-            <img className="image-card" src={item.image} />
-
-            <div className="card-details">
-              <img className="image-title" src={item.imgTitle} />
-              <p className="text">{item.text}</p>
-              <h4>{item.name}</h4>
-              <p className="pos">{item.position}</p>
-            </div>
-          </div>
-        ))}
-      </div> */}
     </section>
   );
 }

@@ -1,13 +1,20 @@
 import React from "react";
 import MentalHealth from "./MentalHealth";
+import { motion } from "framer-motion";
 
 export default function Section8() {
   return (
     <section className="section8-container">
       <div className="section8-wrapper">
-        <div className="member-img">
-          <img src="/kima.jpg" />
-        </div>
+        <motion.div
+          className="member-img"
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false, amount: 0.2 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+        >
+          <img src="/kima.jpg" alt="Kima" />
+        </motion.div>
 
         <MentalHealth
           className="member-impact"

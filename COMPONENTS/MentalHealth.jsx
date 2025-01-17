@@ -11,7 +11,6 @@ export default function MentalHealth({
 }) {
   return (
     <div className={`mental-health ${className}`}>
-      {/* <div className="mental-health-details"> */}
       <h3>{header1}</h3>
       <h2>{header2}</h2>
       <p className="text">{text}</p>
@@ -22,7 +21,6 @@ export default function MentalHealth({
         Watch Now
         <IoMdPlayCircle className="play-circle" />
       </div>
-      {/* </div> */}
     </div>
   );
 }

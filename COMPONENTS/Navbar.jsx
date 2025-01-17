@@ -10,11 +10,6 @@ import NavAndFooterLinks from "./NavAndFooterLinks";
 
 export default function Navbar({
   logo,
-  // BgColor,
-  // userColor,
-  // dropDLineColor,
-  // vertLineColor,
-  // navLinkColor,
 
   className,
 }) {

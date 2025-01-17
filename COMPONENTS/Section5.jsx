@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function Section5() {
   const sec5Cards = [
@@ -48,15 +49,22 @@ export default function Section5() {
 
           <div className="card-wrapper">
             {sec5Cards.map((item, i) => (
-              <div className="card" key={i}>
-                <img src={item.icon} />
+              <motion.div
+                className="card"
+                key={i}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: false, amount: 0.2 }}
+                transition={{ duration: 0.5, ease: "easeOut", delay: i * 0.1 }}
+              >
+                <img src={item.icon} alt={item.title} />
                 <h2>{item.title}</h2>
                 <p>
                   {item.text}
                   <span>{item.span}</span> {item.textExt}
                 </p>
                 <button>{item.button}</button>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

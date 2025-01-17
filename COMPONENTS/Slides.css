@@ -47,11 +47,16 @@
 
 .slides-wrapper .cards-wrapper {
   display: grid;
-  /* grid-template-columns: repeat(5, 1fr); */
   gap: 30px;
-  overflow-x: hidden;
+  overflow-x: auto;
   scroll-behavior: smooth;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
   z-index: 700;
+}
+
+.slides-wrapper .cards-wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 @media screen and (max-width: 767px) {

@@ -1,20 +1,42 @@
 import { useRef } from "react";
 import { IoMdArrowForward } from "react-icons/io";
 import { IoMdArrowBack } from "react-icons/io";
+import { motion } from "framer-motion";
 
 export default function Slides({ title, text, children }) {
   const cardsWrapperRef = useRef(null);
-  const scrollAmount = 1000;
+  const scrollAmount = 600;
+  const mobileScrollAmount = 300;
 
   const nextSlide = () => {
+    const scrollDistance =
+      window.innerWidth <= 767 ? mobileScrollAmount : scrollAmount;
+
     if (cardsWrapperRef.current) {
-      cardsWrapperRef.current.scrollLeft += scrollAmount;
+      const totalWidth = cardsWrapperRef.current.scrollWidth;
+      const containerWidth = cardsWrapperRef.current.clientWidth;
+      const currentScroll = cardsWrapperRef.current.scrollLeft;
+
+      if (currentScroll + containerWidth >= totalWidth) {
+        cardsWrapperRef.current.scrollLeft = 0;
+      } else {
+        cardsWrapperRef.current.scrollLeft += scrollDistance;
+      }
     }
   };
 
   const prevSlide = () => {
+    const scrollDistance =
+      window.innerWidth <= 768 ? mobileScrollAmount : scrollAmount;
+
     if (cardsWrapperRef.current) {
-      cardsWrapperRef.current.scrollLeft -= scrollAmount;
+      const currentScroll = cardsWrapperRef.current.scrollLeft;
+      if (currentScroll <= 0) {
+        const totalWidth = cardsWrapperRef.current.scrollWidth;
+        cardsWrapperRef.current.scrollLeft = totalWidth;
+      } else {
+        cardsWrapperRef.current.scrollLeft -= scrollDistance;
+      }
     }
   };
 
@@ -33,9 +55,16 @@ export default function Slides({ title, text, children }) {
         </div>
       </div>
 
-      <div className="cards-wrapper" ref={cardsWrapperRef}>
+      <motion.div
+        className="cards-wrapper"
+        ref={cardsWrapperRef}
+        style={{ display: "flex", gap: "1rem", overflowX: "auto" }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+      >
         {children}
-      </div>
+      </motion.div>
     </section>
   );
 }
