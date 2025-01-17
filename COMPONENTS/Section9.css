@@ -38,7 +38,7 @@
 @media screen and (max-width: 767px) {
   .section9-container {
     padding: 60px 30px 60px 30px;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 40px;
   }
 
@@ -50,30 +50,15 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .mental-health.community-building {
-    position: absolute;
-    transform: translateY(0);
-    width: 685px;
-  }
-
   .section9-container {
     padding: 80px 60px 80px 60px;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 40px;
-    position: relative;
-    height: 70vh;
   }
 
   .section9-container .community-img img {
-    width: 85%;
-    height: 350px;
-    object-fit: cover;
-    object-position: top;
+    width: 100%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateX(9%) translateY(22%);
   }
 }

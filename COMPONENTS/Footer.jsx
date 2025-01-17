@@ -2,13 +2,14 @@ import React from "react";
 import { IoLogoLinkedin } from "react-icons/io";
 import { RiTwitterXFill } from "react-icons/ri";
 import { FaSquareInstagram } from "react-icons/fa6";
+import NavAndFooterLinks from "./NavAndFooterLinks";
 
 export default function Footer() {
   return (
     <section>
       <div className="footer-top">
         <div className="badge-and-logo">
-          <img className="logo" src="/Modern-logo.png" />
+          <img className="logo" src="/ModernHealth-logo-main.svg" />
           <div className="badge">
             <img className="badge-1" src="/GooglePlay-badge.png" />
             <img className="badge-2" src="/AppStore-badge.png" />
@@ -32,6 +33,8 @@ export default function Footer() {
               />
             </div>
           </div>
+
+          <NavAndFooterLinks className="grid-links"></NavAndFooterLinks>
         </div>
       </div>
 

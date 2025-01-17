@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function Section2() {
   const sec2Cards = [
@@ -29,15 +30,40 @@ export default function Section2() {
           <img src="./ModernHealth-icon.svg" />
         </div>
 
-        <div className="sec2-card-wrapper">
+        <motion.div
+          className="sec2-card-wrapper"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.2 }}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: {
+                staggerChildren: 0.2,
+                duration: 0.8,
+                ease: "easeOut",
+              },
+            },
+          }}
+        >
           {sec2Cards.map((item, i) => (
-            <div className="sec2-card" key={i}>
+            <motion.div
+              className="sec2-card"
+              key={i}
+              variants={{
+                hidden: { opacity: 0, y: 50 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              transition={{ duration: 0.8 }}
+            >
               <h4>{item.value}</h4>
               <h3>{item.header}</h3>
               <p>{item.text}</p>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -41,31 +41,15 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .mental-health.member-impact {
-    position: absolute;
-    top: 54.3%;
-    /* transform: translateY(0); */
-    width: 685px;
-  }
-
   .section8-wrapper {
     padding: 80px 60px 80px 60px;
     flex-direction: column;
     gap: 40px;
-    position: relative;
-    height: 74vh;
   }
 
   .section8-wrapper .member-img img {
-    width: 85%;
-    height: 350px;
-    object-fit: cover;
-    object-position: top;
+    width: 100%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateX(9%) translateY(22%);
   }
 }

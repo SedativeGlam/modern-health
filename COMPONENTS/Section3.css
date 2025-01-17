@@ -3,6 +3,7 @@
   padding: 90px 0;
   overflow: hidden;
   width: 100%;
+  z-index: 900;
 }
 
 .sec3-container p {
@@ -17,11 +18,16 @@
   align-items: center;
   gap: 80px;
   margin-top: 55px;
-  animation: scrollLogos 20s linear infinite;
+}
+
+.logos-wrapper img {
+  max-width: 200px;
+  object-fit: contain;
 }
 
 .logos-wrapper .company-logo {
-  width: 200px;
+  width: auto;
+  object-fit: contain;
 }
 
 .pixar {
@@ -35,12 +41,11 @@
 .dennys {
   width: 100px;
 }
-
-@keyframes scrollLogos {
-  from {
-    transform: translateX(2%);
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
-  to {
+  100% {
     transform: translateX(-100%);
   }
 }
@@ -51,13 +56,12 @@
   }
 
   .sec3-container p {
-    margin: 0 40px;
-    font-size: 23px;
+    font-size: 24px;
   }
 
   .logos-wrapper {
     margin-top: 30px;
-    animation: scrollLogos 5s linear infinite;
+    animation: scroll 10s linear infinite;
   }
 
   .logos-wrapper .company-logo {
